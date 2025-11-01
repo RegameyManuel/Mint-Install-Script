@@ -140,7 +140,7 @@ $APT_GET install \
 # - DBeaver CE (client DB) et Symfony CLI
 
 # ===== PHP: determine version dynamically =====
-PHP_VER="$(php -r 'echo PHP_MAJOR_VERSION.\".\".PHP_MINOR_VERSION;')"
+PHP_VER="$(php -r 'echo PHP_MAJOR_VERSION.".".PHP_MINOR_VERSION;')"
 echo "[PHP] Detected PHP ${PHP_VER}"
 PHP_INI_APACHE="/etc/php/${PHP_VER}/apache2/php.ini"
 PHP_INI_CLI="/etc/php/${PHP_VER}/cli/php.ini"
